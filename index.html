@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Algoritma Pemrograman</title>
+  <link rel="icon" href="img/A.png">
+</head>
+
+<body>
+  <!-- navbar -->
+  <nav class="navbar shadow bg-white navbar-expand-lg pt-3 fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#beranda">
+        <img src="img/A.png" width="35px" alt="">
+        ALGORITMA PEMROGRAMAN</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Beranda</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="" role="button" data-bs-auto-close="outside"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Materi
+            </a>
+            <ul class="dropdown-menu">
+
+              <li><a class="dropdown-item" href="#">Apa itu Algoritma Pemrograman</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#penyajian">Cara Penyajian Algoritma</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#cara-kerja">Cara Kerja Algoritma Pemrograman</a></li>
+              <hr class="dropdown-divider">
+              <li><a class="dropdown-item" href="#fungsi">Fungsi Algoritma Pemrograman</a></li>
+              <hr class="dropdown-divider">
+              <li><a class="dropdown-item" href="#jenis">Jenis-jenis Algoritma Pemrograman</a></li>
+
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+
+
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- navbar end -->
+
+  <svg id="wave" style="transform:rotate(180deg); transition: 0.3s; position: absolute;" viewBox="0 0 1440 370"
+    version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0">
+        <stop stop-color="rgba(193.257, 228.096, 226.512, 1)" offset="0%"></stop>
+        <stop stop-color="rgba(255, 255, 255, 1)" offset="100%"></stop>
+      </linearGradient>
+    </defs>
+    <path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)"
+      d="M0,333L30,302.2C60,271,120,210,180,191.2C240,173,300,197,360,197.3C420,197,480,173,540,160.3C600,148,660,148,720,148C780,148,840,148,900,123.3C960,99,1020,49,1080,37C1140,25,1200,49,1260,55.5C1320,62,1380,49,1440,55.5C1500,62,1560,86,1620,135.7C1680,185,1740,259,1800,271.3C1860,284,1920,234,1980,228.2C2040,222,2100,259,2160,271.3C2220,284,2280,271,2340,234.3C2400,197,2460,136,2520,111C2580,86,2640,99,2700,98.7C2760,99,2820,86,2880,111C2940,136,3000,197,3060,197.3C3120,197,3180,136,3240,129.5C3300,123,3360,173,3420,197.3C3480,222,3540,222,3600,209.7C3660,197,3720,173,3780,160.3C3840,148,3900,148,3960,135.7C4020,123,4080,99,4140,117.2C4200,136,4260,197,4290,228.2L4320,259L4320,370L4290,370C4260,370,4200,370,4140,370C4080,370,4020,370,3960,370C3900,370,3840,370,3780,370C3720,370,3660,370,3600,370C3540,370,3480,370,3420,370C3360,370,3300,370,3240,370C3180,370,3120,370,3060,370C3000,370,2940,370,2880,370C2820,370,2760,370,2700,370C2640,370,2580,370,2520,370C2460,370,2400,370,2340,370C2280,370,2220,370,2160,370C2100,370,2040,370,1980,370C1920,370,1860,370,1800,370C1740,370,1680,370,1620,370C1560,370,1500,370,1440,370C1380,370,1320,370,1260,370C1200,370,1140,370,1080,370C1020,370,960,370,900,370C840,370,780,370,720,370C660,370,600,370,540,370C480,370,420,370,360,370C300,370,240,370,180,370C120,370,60,370,30,370L0,370Z">
+    </path>
+  </svg>
+
+  <!-- Beranda -->
+  <section class="beranda">
+
+    <div class="content-1">
+      <div class="row">
+        <div class="col-12">
+          <h1 class="hidden">Apa itu Algoritma <br> Pemrograman?</h1>
+          <P class="hidden">Algoritma pemrograman adalah serangkaian langkah atau instruksi untuk memecahkan masalah
+            tertentu. Di dalam
+            pemrograman, algoritma digunakan untuk menentukan alur logika program.
+            Bisa dibilang bahwa algoritma adalah aspek utama ketika developer membuat program dengan bahasa pemrograman
+            apapun. Sebab, hasil akhir program bergantung dari algoritma yang ditulis.
+            <br>
+            Oleh karena itu, seorang developer wajib menguasai algoritma pemrograman ketika belajar pemrograman. Lantas,
+            bagaimana sih cara mempelajari algoritma dan pemrograman?
+          </P>
+        </div>
+        <div class="col">
+          <video id="video" controls class="anu video-1">
+            <source src="video/definisi.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+
+
+    </div>
+  </section>
+  <!-- Beranda end -->
+
+  <!-- penyajian -->
+  <section id="penyajian">
+    <div class="container ">
+      <h1 class="text-center pb-1 fs-3 hidden"> <strong>Cara Penyajian Algoritma</strong></h1>
+      <p class="text-center fs-6 hidden">Sebagai awalan, Anda bisa belajar dua cara penyajian algoritma programming,
+        yaitu:</p>
+      <div class="row justify-content-center pt-3 about" style="gap:10%;">
+        <div class="col-5">
+          <div class="card shadow">
+            <img src="img/seudocode.webp" class=" card-img-top" alt="">
+            <div class="card-body">
+              <h5 class="card-title pb-2"><strong>Pseudocode</strong></h5>
+              <p class="card-text">Pseudocode adalah cara penulisan program secara informal dengan kaidah sendiri,
+                daripada menggunakan aturan yang ditetapkan bahasa pemrograman. Tujuannya yaitu agar alur logika yang
+                ditulis lebih mudah dipahami manusia.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="card shadow">
+            <img src="img//flowchart-adalah-fungsi-algoritma-pemrograman-768x619.webp" class="card-img-top" alt="">
+            <div class="card-body">
+              <h5 class="card-title pb-2"><strong>Flowchart</strong></h5>
+              <p class="card-text">Flowchart adalah diagram yang menampilkan proses dan langkah pengambilan keputusan
+                dalam suatu program. Tujuan flowchart adalah menyederhanakan rangkaian prosedur serta mengurangi risiko
+                salah tafsir.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+  <!-- penyajian end -->
+
+  <!-- cara kerja -->
+  <div class="row">
+    <div class="col">
+      <section id="cara-kerja">
+        <div class="row">
+          <h1 class="text-center fs-3 hidden "> <strong>Cara Kerja Algoritma Pemrograman</strong></h1>
+          <p class="text-center fs-6 pt-3 hidden">Di dalam pemrograman, algoritma bekerja dengan mengandalkan tiga aspek
+            utama,
+            yakni:
+            <br>input → proses → output.
+          </p>
+          <div class="row justify-content-center py-5 g-4 pt-5" style="gap: 8%;">
+            <div class="col-3">
+              <img src="img/input.png" class="hidden card-img" style="width: 150px;">
+            </div>
+            <div class="col-3">
+              <img src="img//engineering.png" class="about card-img" style="width: 150px;">
+            </div>
+            <div class="col-3">
+              <img src="img/output.png" class=" anu card-img" style="width: 150px;">
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="col">
+      <div class="row justify-content-center macam anu">
+        <p class="text-center fs-5 pt-3 ">Dalam praktiknya, algoritma pemrograman terdiri dari <br>tiga macam
+          konstruksi/struktur,
+          yaitu:</p>
+        <div class="wrapper about">
+          <img src="img/merebus.png" class="img-kerja">
+          <div class="text-box">
+            <h2 class="fs-3 pt-3">Algoritma Sekuensial</h2>
+            <p style="font-size: 13;">Algoritma dengan prosedur yang berjalan dari satu proses ke proses berikutnya
+              untuk mencapai hasil
+              akhir. Contohnya, merebus air mentah hingga air matang.</p>
+          </div>
+        </div>
+        <div class="wrapper about">
+          <img src="img/ujian.png" class="img-kerja" width="150px">
+          <div class="text-box">
+            <h2 class="fs-3 pt-3">Algoritma Percabangan</h2>
+            <p style="font-size: 13;">Algoritma yang menjalankan keputusan berdasarkan kondisi tertentu dengan dua
+              atau lebih percabangan.
+              Misalnya, jika nilai ujian lebih dari 75 maka hasilnya lulus ujian.</p>
+          </div>
+        </div>
+        <div class="wrapper about">
+          <img src="img/loop.png" class="img-kerja" alt="">
+          <div class="text-box">
+            <h2 class="fs-3 pt-3">Algoritma Pengulangan</h2>
+            <p style="font-size: 13;"> Algoritma yang menjalankan urutan perintah berulang-ulang hingga beberapa kali.
+              Contohnya, menampilkan
+              bilangan kelipatan dua mulai dari 0 hingga 50.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- cara kerja end -->
+
+  <!-- fungsi -->
+  <section id="fungsi" class="fungsi">
+    <div class="row">
+      <div class="col-6">
+        <video id="video" controls class="hidden video-2">
+          <source src="video/fungsi.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="col card-fungsi g-3">
+        <div class="row justify-content-center py-5 g-2" style="gap: 4%;">
+          <h1 style="font-size:30px; font-weight: bold;" class="anu">Fungsi Algoritma <br> Pemrograman</h1>
+          <P class="anu" style="font-size: 17px;">Algoritma pemrograman berfungsi untuk menyelesaikan masalah <br> yang
+            menjadi tujuan
+            pembuatan
+            program. Namun tak cuma itu, fungsi algoritma pemrograman juga:
+          </P>
+          <div class="col-5 about">
+            <img src="img/number-1.png" class="img-kerja pt-4" style="width: 25%;">
+            <div class="text-box">
+              <p style="font-size: 15; padding-top: 35px;">Mengotomatiskan solusi permasalahan yang ingin diselesaikan
+                program.</p>
+            </div>
+          </div>
+          <div class="col-5 about">
+            <img src="img/number-2.png" class="img-kerja pt-4" style="width: 25%;">
+            <div class="text-box">
+              <p style="font-size: 15; padding-top: 25px;">Menyederhanakan alur kerja dan logika program untuk
+                memudahkan programmer
+                menulis kode (coding).</p>
+            </div>
+          </div>
+          <div class="col-5 about">
+            <img src="img/number-3.png" class="img-kerja pt-4" style="width: 25%;">
+            <div class="text-box">
+              <p style="font-size: 15; padding-top: 35px;">Mencegah penulisan kode program yang sama secara berulang.
+              </p>
+            </div>
+          </div>
+          <div class="col-5 about">
+            <img src="img/number-4.png" class="img-kerja pt-4" style="width: 25%;">
+            <div class="text-box">
+              <p style="font-size: 15; padding-top: 35px;">Memudahkan penelusuran masalah apabila terdapat bug atau
+                program error.</p>
+            </div>
+          </div>
+          <div class="col-5 about">
+            <img src="img/number-5.png" class="img-kerja pt-4" style="width: 25%;">
+            <div class="text-box">
+              <p style="font-size: 15; padding-top: 30px;">Meringankan pekerjaan programmer saat mengupdate atau
+                menambah fitur-fitur
+                baru di program.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- fungsi end -->
+
+  <!-- jenis -->
+  <section id="jenis">
+    <h2 class="text-center bold pt-5 fs-4 anu ">--- Jenis-jenis Algoritma Pemrograman ---</h2>
+    <p class="text-center fs-5 pt-2 fs-5 hidden">Beberapa jenis algoritma yang wajib diketahui programmer adalah sebagai
+      berikut:
+    </p>
+    <div class="row justify-content-center" style="gap: 5%;">
+      <div class="col-4 about">
+        <img src="img/1.png" class="img-kerja " style="width: 9%;">
+        <div class="text-box">
+          <H2 class="fs-5 bold pt-3">Algoritma Brute Force</H2>
+          <p>Algoritma brute force adalah jenis algoritma yang mencoba semua
+            kemungkinan untuk menyelesaikan masalah. Dengan kata lain, ia akan melakukan percobaan satu persatu hingga
+            menemukan solusi yang tepat.
+            Contoh penggunaan algoritma Brute Force misalnya untuk memecahkan 4 digit kode PIN dari angka 0 hingga 9.
+            Setidaknya, butuh hingga 10.000 percobaan untuk menemukan kombinasi angka yang tepat.</p>
+        </div>
+      </div>
+      <div class="col-4 about">
+        <img src="img/2.png" class="img-kerja" style="width: 9%;">
+        <div class="text-box">
+          <H2 class="fs-5 bold pt-3">Algoritma Recursive</H2>
+          <p>Jenis algoritma yang kedua adalah algoritma recursive. Pada algoritma
+            pemrograman ini, masalah diselesaikan sedikit demi sedikit dengan cara membaginya ke dalam beberapa kondisi
+            yang serupa.
+            Jika sulit membayangkan, algoritma pemrograman recursive bisa Anda temukan ketika mengerjakan soal
+            perhitungan pohon faktor Matematika.</p>
+        </div>
+      </div>
+      <div class="col-4 about">
+        <img src="img/3.png" class="img-kerja" style="width: 9%;">
+        <div class="text-box">
+          <H2 class="fs-5 bold pt-3">Algoritma Randomized</H2>
+          <p>Sesuai namanya, algoritma randomized memanfaatkan penggunaan nomor secara acak untuk
+            menentukan apa yang harus dilakukan selanjutnya. Tujuannya yaitu untuk mengurangi kerumitan di dalam
+            pemrograman.
+            Contoh dari algoritma randomized adalah menentukan pivot selanjutnya menggunakan nomor yang muncul secara
+            acak.</p>
+        </div>
+      </div>
+
+      <div class="col-4 about">
+        <img src="img/4.png" class="img-kerja" style="width: 9%;">
+        <div class="text-box">
+          <H2 class="fs-5 bold pt-3">Algoritma Sorting </H2>
+          <p>Bisa ditebak, algoritma sorting adalah jenis yang berfungsi untuk mengurutkan data
+            berdasarkan kondisi tertentu, misalnya dari abjad A sampai Z atau jumlah angka besar ke kecil.
+            Contoh penerapan algoritma sorting antara lain bubble sort, merge sort, insertion sort, dan selection sort.
+          </p>
+        </div>
+      </div>
+      <div class="col-4 about">
+        <img src="img/5.png" class="img-kerja " style="width: 9%;">
+        <div class="text-box">
+          <H2 class="fs-5 bold pt-3">Algoritma Searching</H2>
+          <p>Algoritma searching adalah tipe algoritma yang digunakan untuk mencari suatu data,
+            baik yang sudah disortir maupun belum, menggunakan query yang spesifik. Contoh pemanfaatan algoritma
+            searching yaitu binary search dan linear search.</p>
+        </div>
+      </div>
+      <div class="col-4 about">
+        <img src="img/6.png" class="img-kerja " style="width: 9%;">
+        <div class="text-box">
+          <H2 class="fs-5 bold pt-3">Algoritma Hashing</H2>
+          <p>Algoritma hashing sebenarnya mirip dengan algoritma searching. Bedanya, hashing tak
+            hanya mencari data, tapi juga mencocokkan query pencarian dengan kunci ID yang sudah ditetapkan.
+            Contoh pemanfaatan algoritma hashing yaitu untuk verifikasi password ketika ingin masuk ke akun tertentu.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <!-- jenis end -->
+
+  <!-- about -->
+  <section id="about" class="about">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <h2 class="pb-2 text-center bold">About</h2>
+          <p class="text-center fs-5">Selamat datang di website saya!! <br> Sumber Pengetahuan Algoritma Pemrograman!
+            Kami sangat antusias mempersembahkan website ini sebagai bagian dari tugas sekolah kami. Website ini
+            bertujuan untuk menjadi sumber daya bermanfaat bagi siswa, pengembang perangkat lunak,
+            dan semua orang yang tertarik dengan dunia algoritma pemrograman.
+            Misi kami adalah untuk membantu memahamkan konsep-konsep algoritma pemrograman dengan cara yang sederhana
+            dan
+            menyenangkan. Kami ingin memberikan penjelasan yang mudah dimengerti, contoh praktis, dan sumber daya
+            bermanfaat
+            bagi mereka yang ingin meningkatkan pemahaman mereka tentang algoritma.
+          </p>
+        </div>
+      </div>
+  </section>
+  <!-- about end -->
+
+  <section id="waves">
+    <div class="wave wave1"></div>
+    <div class="wave wave2"></div>
+    <div class="wave wave3"></div>
+    <div class="wave wave4"></div>
+  </section>
+
+  <!-- footer -->
+  <footer>
+    <div class="container-fluid  text-center text-md-left pt-5 pb-2" style="text-align: left; background:#b6d3d5 ;">
+      <div class=" text-align-center align-items-center">
+        <p>Copyright ©2023 by:
+          <a href="#" style="text-decoration: none;">
+            <strong class="text-dark">Yudi Andika</strong>
+          </a>
+        </p>
+      </div>
+    </div>
+  </footer>
+  <!-- footer end -->
+
+  <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script defer src="app.js"></script>
+</body>
+
+</html>

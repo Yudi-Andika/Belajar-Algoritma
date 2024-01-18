@@ -1,0 +1,337 @@
+  @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* navbar */
+@media (max-width : 900px){
+  .navbar-brand{
+    font-size: 0.3em;
+  }
+}
+@keyframes fade-down {
+  0%{
+    opacity: 0;
+    transform: translateY(-30px) scale(0.9);
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0px) scale(1);
+  }
+}
+.navbar
+{
+  padding-right:1.2em;
+  
+}
+.navbar-brand
+{
+  animation: fade-down 0.5s;
+  color:#24677d;
+  font-size: 1.1em;
+  font-weight: 590;
+}
+@media screen and (min-width: 993px){
+  .dropdown:hover > .dropdown-menu, .dropend:hover > .dropdown-menu
+  {display: block;
+    margin-top: .125em;
+  }
+  .dropend:hover > .dropdown-menu
+  {
+    position: absolute;
+    top: 0;
+    left: 100%;
+  }
+}
+.nav-link::before
+{
+  content: '';
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  border-radius: 40px;
+  background: #333;
+  transform: scaleX(0);
+  transition: transform 0.2s;
+  transform-origin: center;  
+}
+.nav-link:hover::before
+{
+  transform: scaleX(1);
+}
+.nav-link:hover{
+  color: #347388;
+}
+.nav-link
+{
+  position: relative;
+  display: inline-block;
+  font-size: 15px;
+  text-decoration: none;
+  margin: 0 18px;
+  letter-spacing: 0.1em;
+  animation: fade-down 0.7s;
+}
+.dropdown-menu{
+  font-size: 14px;
+}
+button{
+  right: 10%;
+}
+/* navbar end */
+
+/* beranda */
+.beranda
+{
+  width: 100%;
+  min-height: 100vh;
+  padding: 10px;
+  padding-left: 9%;
+}
+.video-1{
+  position: absolute;
+  height: auto;
+  top: 30%;
+  right: 3%;
+  width: 42%;
+  border-radius: 20px;
+}
+.content-1
+{
+  margin-top: 15%;
+  max-width: 900px;
+  bottom: 0%;
+}
+.hidden{
+  opacity: 0;
+  filter: blur(1px);
+  transform: translateX(-100%);
+  transition: all 1s;
+}
+.show{
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+.content-1 h1
+{
+  font-size:40px;
+  font-weight: bold;
+  color: #333;
+}
+.content-1 p
+{
+  margin: 20px 0 30px;
+  font-size: 18px;
+  color: #333;
+  max-width: 800px;
+}
+/* feature img */
+.feature-img
+{
+  width: 550px;
+  position: absolute;
+  height: auto;
+  top: 15%;
+  right: 9%;
+  transition: all 0.3s;
+  animation: fade-up 1s;
+}
+
+.feature-img:hover
+{
+  transform: scale(1.1);
+}
+/* feature img */
+/* beranda end */
+
+/* penyajian */
+.card-img-top
+{
+  border-radius: 35px;
+  padding: 20px;
+}
+.card{
+  border-radius: 20px;
+  transition: all 0.3s;
+}
+.card:hover
+{
+  transform: scale(1.1);
+}
+#penyajian{
+  padding-bottom: 10%;
+  padding-top: 7%;
+}
+/* penyajian end */
+
+/* cara-kerja */
+#cara-kerja 
+{
+  padding-bottom: 20%;
+  padding-top: 20%;
+  padding-left: 100px;
+}
+.card-img{
+  transition: all 0.3s;
+}
+.card-img:hover{
+  transform: scale(1.1);
+}
+.wrapper{
+  margin: 7px auto;
+  width: 60%;
+}
+.img-kerja{
+  max-width: 120px;
+  float: left;
+  margin-right: 20px;
+  padding-top: 15px;
+  transition: all 0.3s;
+}
+.img-kerja:hover{
+  transform: scale(1.1);
+}
+.macam{
+  padding-top: 12%;
+  padding-bottom: 20%;
+}
+/* cara-kerja end*/
+ 
+/* fungsi */
+.fungsi{
+  padding-bottom: 10%;
+}
+.card-fungsi{
+  padding-top: 2%;
+  /* position: relative; */
+}
+.video-2{
+  width: 95%;
+  border-radius: 25px;
+  padding-top: 28%;
+  padding-left: 10%;
+}
+.anu{
+  opacity: 0;
+  filter: blur(1px);
+  transform: translateX(100px);
+  transition: all 1s;
+}
+.show-1{
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+/* fungsi end*/
+
+/* jenis */
+#jenis{
+  padding-top: 3%;
+  padding-bottom: 10%;
+}
+/* jenis end*/
+
+/* about */
+#about{
+  /* padding-bottom: 3%; */
+  padding-top: 5%;
+ /* background: url(img/blob.svg); */
+}
+
+/* wave */
+#waves
+{
+  position: relative;
+  width: 100%;
+  height: 30vh;
+  background: rgb(255, 255, 255);
+  overflow: hidden;
+}
+#waves .wave
+{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: url(img/wave.png);
+  background-size: 1000px 100px;
+filter: invert(11%) sepia(40%) saturate(120%) hue-rotate(128deg) brightness(87%) contrast(90%);
+}
+#waves .wave.wave1
+{
+  animation: animate 10s linear infinite;
+  z-index: 1000;
+  opacity: 1;
+  animation-delay: 0s;
+  bottom: 0;
+}
+#waves .wave.wave2
+{
+  animation: animate2 15s linear infinite;
+  z-index: 999;
+  opacity: 0.5;
+  animation-delay: -5s;
+  bottom: 10px;
+}
+#waves .wave.wave3
+{
+  animation: animate 30s linear infinite;
+  z-index: 998;
+  opacity: 0.2;
+  animation-delay: -2s;
+  bottom: 15;
+}
+#waves .wave.wave4
+{
+  animation: animate2 5s linear infinite;
+  z-index: 997;
+  opacity: 0.7;
+  animation-delay: -5s;
+  bottom: 20px;
+}
+
+@keyframes animate
+{
+  0%
+  {
+    background-position-x: 0;
+  }
+  100%
+  {
+    background-position-x: 1000px;
+  }
+}
+
+@keyframes animate2
+{
+  0%
+  {
+    background-position-x: 0;
+  }
+  100%
+  {
+    background-position-x: -1000px;
+  }
+}
+
+
+.about {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition:  all 0.7s ease;
+}
+.tampil{
+  position:relative;
+  transform: translateY(0px);
+  opacity: 1;
+}
+/* about end */
